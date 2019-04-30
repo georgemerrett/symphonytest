@@ -1,0 +1,13 @@
+App\Entity\Employee:
+    properties:
+        firstname:
+            - NotBlank: ~
+        lastname:
+            - NotBlank: ~
+        birthdate:
+            - Date: ~
+        email:
+            - NotBlank: ~
+            - Email:
+                message: The email "{{ value }}" is not a valid email.
+                mode: loose

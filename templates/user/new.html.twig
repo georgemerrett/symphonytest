@@ -1,0 +1,16 @@
+{# templates/user/new.html.twig #}
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+    <div class="container form-user">
+        <h3>Employees</h3>
+        <div class='col-md-6 offset-md-3'>
+        {{ form(form) }}
+        </div>
+    </div>
+    {{ render(controller(
+    'App\\Controller\\EmployeeController::show',
+    { 'max': 3 }
+    )) }}
+{% endblock %}

@@ -15,3 +15,10 @@ framework:
     #fragments: true
     php_errors:
         log: true
+        
+    # Enable Validation
+    validation: { enabled: true }
+    
+    # Enable PHP templating
+    templating:
+        engines: ['twig', 'php']

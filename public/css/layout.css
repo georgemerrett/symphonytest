@@ -1,0 +1,44 @@
+body {
+    color: #124f7b;
+    font-weight: 600;
+}
+.alert-user {
+    max-width: 980px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.form-user {
+    padding: 20px;
+    background-color: #def2f9;
+    margin-bottom: 40px;
+    max-width: 980px;
+}
+.form-user > h3{
+    text-align: center;
+    font-weight: 600;
+}
+.form-user .btn-primary {
+    background-color: #f15a25;
+    border-color: #C64C23;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+select.form-control {
+    margin-right: 10px;
+}
+label.required:after, .col-form-label.required:after {
+  content:" *";
+  color:red;
+}
+.table-user {
+    margin-bottom: 40px;
+}
+.table-user tr:nth-child(odd){
+    background-color: #def2f9!important;
+}
+.table-user th{
+    background-color: #124f7b;
+    color: #58bfe0;
+}

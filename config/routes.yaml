@@ -1,3 +1,12 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\EmployeeController::new
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\LuckyController::number
+app_user_new:
+    path: /user/new
+    controller: App\Controller\EmployeeController::new
+app_user_show:
+    path: /user/view
+    controller: App\Controller\EmployeeController::show
